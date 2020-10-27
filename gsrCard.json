@@ -1,0 +1,241 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "ColumnSet",
+            "columns": [
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Image",
+                            "style": "Person",
+                            "url": "https://cdn4.iconfinder.com/data/icons/computer-technology-6/64/Error-computer-notice-warning-512.png",
+                            "size": "Medium",
+                            "height": "50px"
+                        }
+                    ],
+                    "width": "auto"
+                },
+                {
+                    "type": "Column",
+                    "items": [
+                        {
+                            "type": "Container",
+                            "items": [
+                                {
+                                    "type": "TextBlock",
+                                    "text": "General Service Request",
+                                    "color": "Light",
+                                    "size": "ExtraLarge",
+                                    "spacing": "Padding",
+                                    "horizontalAlignment": "Left"
+                                }
+                            ]
+                        }
+                    ],
+                    "width": "auto",
+                    "verticalContentAlignment": "Center"
+                }
+            ],
+            "spacing": "Medium",
+            "horizontalAlignment": "Left",
+            "style": "emphasis"
+        },
+        {
+            "type": "Container",
+            "style": "attention",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "STOP! PLEASE READ: Only use this form if you have searched and not found the correct one.",
+                    "wrap": true,
+                    "horizontalAlignment": "Center",
+                    "weight": "Bolder",
+                    "size": "Medium",
+                    "color": "Warning"
+                }
+            ],
+            "horizontalAlignment": "Center",
+            "spacing": "Small"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "TextBlock",
+                    "text": "Using the correct form provides more information to the support teams.",
+                    "wrap": true,
+                    "horizontalAlignment": "Center",
+                    "size": "Medium",
+                    "color": "Good",
+                    "weight": "Bolder"
+                }
+            ],
+            "style": "good",
+            "horizontalAlignment": "Left",
+            "spacing": "None"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "RichTextBlock",
+                    "inlines": [
+                        {
+                            "type": "TextRun",
+                            "text": "NOTE - ",
+                            "color": "Warning",
+                            "weight": "Bolder"
+                        },
+                        {
+                            "type": "TextRun",
+                            "text": "Please call GSD if you are reporting an incident that requires immediate attention, such as impacts to multiple users or the business.",
+                            "color": "Accent",
+                            "weight": "Bolder"
+                        }
+                    ]
+                }
+            ],
+            "spacing": "Small",
+            "horizontalAlignment": "Left"
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "Container",
+                    "items": [
+                        {
+                            "type": "TextBlock",
+                            "text": "Raise this request on behalf of"
+                        },
+                        {
+                            "type": "Input.ChoiceSet",
+                            "placeholder": "Please choose...",
+                            "choices": [
+                                {
+                                    "title": "Llewellyn, Charles",
+                                    "value": "chllewel@cisco.com"
+                                },
+                                {
+                                    "title": "Mah, Jason",
+                                    "value": "jamah@cisco.com"
+                                }
+                            ],
+                            "id": "raisedFor"
+                        },
+                        {
+                            "type": "Container",
+                            "items": [
+                                {
+                                    "type": "Container",
+                                    "items": [
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Summary",
+                                            "color": "Light"
+                                        },
+                                        {
+                                            "type": "Input.Text",
+                                            "placeholder": "Summary...",
+                                            "id": "summary"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Detailed Description of Request",
+                                            "size": "Medium",
+                                            "color": "Light"
+                                        },
+                                        {
+                                            "type": "Input.Text",
+                                            "placeholder": "Description...",
+                                            "isMultiline": true,
+                                            "id": "description"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Urgency of request",
+                                            "color": "Light"
+                                        },
+                                        {
+                                            "type": "Input.ChoiceSet",
+                                            "placeholder": "Select Urgency...",
+                                            "choices": [
+                                                {
+                                                    "title": "Low",
+                                                    "value": "Low"
+                                                },
+                                                {
+                                                    "title": "Medium",
+                                                    "value": "Medium"
+                                                },
+                                                {
+                                                    "title": "High",
+                                                    "value": "High"
+                                                }
+                                            ],
+                                            "id": "urgency"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "Office Location",
+                                            "color": "Light"
+                                        },
+                                        {
+                                            "type": "Input.ChoiceSet",
+                                            "placeholder": "Select Office Location...",
+                                            "choices": [
+                                                {
+                                                    "title": "None",
+                                                    "value": "none"
+                                                },
+                                                {
+                                                    "title": "Office Location 1",
+                                                    "value": "Office Location 1"
+                                                },
+                                                {
+                                                    "title": "Office Location 2",
+                                                    "value": "Office Location 2"
+                                                }
+                                            ],
+                                            "id": "officeLocation"
+                                        },
+                                        {
+                                            "type": "TextBlock",
+                                            "text": "If this needs to go to Desktop Support team, please fill in the desktop region/office for further support.",
+                                            "wrap": true,
+                                            "color": "Light",
+                                            "weight": "Bolder"
+                                        }
+                                    ],
+                                    "style": "emphasis"
+                                }
+                            ]
+                        }
+                    ],
+                    "horizontalAlignment": "Left",
+                    "style": "default"
+                }
+            ]
+        },
+        {
+            "type": "Container",
+            "items": [
+                {
+                    "type": "ActionSet",
+                    "actions": [
+                        {
+                            "type": "Action.Submit",
+                            "title": "Submit"
+                        }
+                    ],
+                    "horizontalAlignment": "Left",
+                    "spacing": "None"
+                }
+            ]
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.2"
+}
